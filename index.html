@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FOR THOUGHT - Motivational Content by Maxwell Nsiah Marfo</title>
+    <meta name="description" content="Feed Your Mind, Fuel Your Purpose. Inspirational audio and video content by Maxwell Nsiah Marfo from Kumasi, Ghana.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">FOOD FOR THOUGHT</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('media')">Media Library</a></li>
+                <li><a href="#" onclick="showPage('events')">Events</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="container">
+                <h1>FOOD FOR THOUGHT</h1>
+                <p class="tagline">Feed Your Mind, Fuel Your Purpose</p>
+                <a href="#" class="cta-button" onclick="showPage('media')">Get Inspired</a>
+            </div>
+        </div>
+        <section class="container" style="padding: 60px 0;">
+            <h2>Welcome to Food for Thought</h2>
+            <div class="welcome-grid">
+                <div>
+                    <img src="my.jpg" alt="Maxwell Nsiah Marfo" class="profile-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCBmaWxsPSIjZjBmMGYwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEyMCIgcj0iNjAiIGZpbGw9IiNENEFGMzciLz48cGF0aCBkPSJNMjAwIDE4MCBRMTUwIDIyMCAyNTAgMjgwIiBmaWxsPSIjRDRBRjM3Ii8+PC9zdmc+'">
+                </div>
+                <div>
+                    <h3>Maxwell Nsiah Marfo</h3>
+                    <p class="quote">"Every challenge is an opportunity for growth. Every setback is a setup for a comeback."</p>
+                    <p>Welcome to Food for Thought, where inspiration meets transformation. I am Maxwell Nsiah Marfo, a motivational speaker based in Kumasi, Ghana, dedicated to helping individuals discover their purpose and unlock their full potential.</p>
+                    <a href="#" onclick="showPage('about')" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page-section">
+        <div class="container">
+            <h2>About Maxwell Nsiah Marfo</h2>
+            <div class="about-grid">
+                <div>
+                    <img src="myy.jpg" alt="Maxwell" class="about-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjE1MCIgZmlsbD0iI0Q0QUYzNyIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNTAiIGZpbGw9IiNGRkYiLz48cGF0aCBkPSJNMTUwIDE3MCBRMTIwIDIwMCAxODAgMjUwIiBmaWxsPSIjRkZGIi8+PC9zdmc+'">
+                </div>
+                <div>
+                    <h3>My Journey</h3>
+                    <p>Based in Kumasi, Ghana, I have dedicated my life to inspiring and motivating individuals across Africa and beyond. My passion for personal development and transformation has touched thousands of lives through powerful speeches, workshops, and digital content.</p>
+                    
+                    <h4>My Mission</h4>
+                    <p>To empower individuals with the tools, mindset, and motivation needed to overcome challenges, discover their purpose, and achieve their full potential.</p>
+                    
+                    <h4>My Vision</h4>
+                    <p>A world where every person lives with purpose, passion, and the power to create positive change in their lives and communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Library Page -->
+    <section id="media" class="page-section">
+        <div class="container">
+            <h2>Media Library</h2>
+            <p class="section-subtitle">Inspirational content to feed your mind and fuel your purpose</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterMedia('all')">All Content</button>
+                <button class="filter-btn" onclick="filterMedia('audio')">Audio</button>
+                <button class="filter-btn" onclick="filterMedia('video')">Video</button>
+                <button class="filter-btn" onclick="filterMedia('image')">Images</button>
+            </div>
+            
+            <div class="media-grid" id="mediaGrid">
+                <!-- Media content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Page -->
+    <section id="blog" class="page-section">
+        <div class="container">
+            <h2>Inspirational Blog</h2>
+            <p class="section-subtitle">Thought-provoking articles for personal growth</p>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Page -->
+    <section id="events" class="page-section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <p class="section-subtitle">Join us for transformative experiences</p>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page-section">
+        <div class="container">
+            <h2>Contact & Book Session</h2>
+            <div class="contact-grid">
+                <div>
+                    <h3>Book a Session</h3>
+                    <p>You are not alone. Let's talk and work through your thoughts together.</p>
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="What would you like to discuss?" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Book Session</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>059 438 2198</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kumasi, Ghana</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>maxwell@foodforthought.com.gh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/233594382198"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 FOOD FOR THOUGHT | Powered by Maxwell Nsiah Marfo</p>
+            <p class="privacy-note">Your data is safe with us. We respect your privacy and protect your information.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/233594382198" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
